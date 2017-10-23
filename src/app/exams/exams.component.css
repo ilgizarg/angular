@@ -1,0 +1,21 @@
+h1,h2,h3{
+    text-align: center;
+}
+mat-progress-spinner{
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+th,td {
+    padding:10px;
+    border-bottom: 1px solid #eee;
+}
+
+th{
+    background-color: coral;
+    color: #eeeeee;
+}
+tr:nth-child(odd) {
+    background-color: #ccc;
+}

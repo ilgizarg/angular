@@ -1,0 +1,38 @@
+<div>
+    <h1>Добро пожаловать!</h1>
+    <h3>{{user.username}}</h3>
+
+  <mat-accordion class="example-headers-align">
+
+    <mat-expansion-panel hideToggle="true" *ngIf="user.isStudent" >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <mat-icon>menu</mat-icon>
+
+        </mat-panel-title>
+
+      </mat-expansion-panel-header>
+        <a routerLink="/exams" mat-raised-button>Экзамены</a>
+        <a routerLink="/exams" mat-raised-button>Экзамены</a>
+        <a routerLink="/exams" mat-raised-button>Экзамены</a>
+        <a routerLink="/exams" mat-raised-button>Экзамены</a>
+
+    </mat-expansion-panel>
+
+      <mat-expansion-panel hideToggle="true" *ngIf="user.isTeacher" >
+          <mat-expansion-panel-header>
+              <mat-panel-title>
+                  <mat-icon>menu</mat-icon>
+
+              </mat-panel-title>
+
+          </mat-expansion-panel-header>
+          <button mat-raised-button>Расписание</button>
+          <button mat-raised-button>Basic</button>
+          <button mat-raised-button>Basic</button>
+          <button mat-raised-button>Basic</button>
+      </mat-expansion-panel>
+
+  </mat-accordion>
+
+</div>

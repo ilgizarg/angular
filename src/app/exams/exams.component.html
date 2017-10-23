@@ -1,0 +1,19 @@
+<mat-progress-spinner *ngIf="loading" mode="indeterminate" [value]="40" ></mat-progress-spinner>
+
+
+
+<table matSort (matSortChange)="sortData($event)">
+    <tr>
+        <th mat-sort-header="discipline">Дисцплина</th>
+        <th mat-sort-header="semester">Семестр</th>
+        <th mat-sort-header="activitytype">Тип</th>
+        <th mat-sort-header="familyName">Препод</th>
+    </tr>
+
+    <tr *ngFor="let exam of sortedData">
+        <td>{{exam.discipline}}</td>
+        <td>{{exam.semester}}</td>
+        <td>{{exam.activitytype}}</td>
+        <td>{{exam.teachers.familyName}}</td>
+    </tr>
+</table>
